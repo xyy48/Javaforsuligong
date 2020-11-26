@@ -16,5 +16,11 @@ public interface BusinessDao  {
     public int updateBusiness(Business business);
     // 通过id查询
     public Business getBusinessById(Integer businessId);
+    // 通过id和password进行查询返回 Business对象
+    public Business getBusinessByIdAndPassword(Integer businessId, String password);
+    // 更新密码
+    public int updateBusinessPassword(Integer businessId, String password);
+
+
 
 }

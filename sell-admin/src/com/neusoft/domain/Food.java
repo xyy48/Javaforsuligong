@@ -7,6 +7,18 @@ public class Food {
     private Double foodPrice;
     private Integer businessId;
 
+    public Food() {
+    }
+
+    public Food(Integer foodId, String foodName, String foodExplain, Double foodPrice, Integer businessId) {
+
+        this.foodId = foodId;
+        this.foodName = foodName;
+        this.foodExplain = foodExplain;
+        this.foodPrice = foodPrice;
+        this.businessId = businessId;
+    }
+
     public Integer getFoodId() {
         return foodId;
     }

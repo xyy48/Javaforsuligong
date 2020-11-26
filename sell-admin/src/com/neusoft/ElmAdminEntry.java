@@ -53,7 +53,7 @@ public class ElmAdminEntry {
                         businessView.removeBusiness();
                         break;
                     case 5:
-                        System.out.println("欢迎下次登录");
+                        System.out.println("欢迎下次登录！");
                         break;
                     default:
                         System.out.println("没有这个选项");
