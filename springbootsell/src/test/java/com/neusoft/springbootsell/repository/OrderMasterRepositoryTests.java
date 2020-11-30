@@ -1,5 +1,6 @@
 package com.neusoft.springbootsell.repository;
 
+
 import com.neusoft.springbootsell.dataobject.OrderMaster;
 import org.junit.Assert;
 import org.junit.Test;
@@ -17,17 +18,17 @@ public class OrderMasterRepositoryTests {
 
     @Autowired
     OrderMasterRepository repository;
-    private final String OPENID = "110110";
+    private final String OPENID = "32233";
 
     @Test
     public void saveTest(){
         OrderMaster orderMaster = new OrderMaster();
-        orderMaster.setOrderId("1234567");
-        orderMaster.setUserName("小丸子");
-        orderMaster.setBuyerPhone("139999999999");
-        orderMaster.setBuyerAddress("江科大南门");
-        orderMaster.setBuyerOpenId(OPENID);
-        orderMaster.setOrderAmount(new BigDecimal(2.9));
+        orderMaster.setOrderId("3123");
+        orderMaster.setBuyerName("小桂子");
+        orderMaster.setBuyerPhone("223323");
+        orderMaster.setBuyerAddress("江科大西门");
+        orderMaster.setBuyerOpenid(OPENID);
+        orderMaster.setOrderAmount(new BigDecimal(3.6));
 
         OrderMaster result = repository.save(orderMaster);
 //        System.out.println(master);
@@ -38,4 +39,3 @@ public class OrderMasterRepositoryTests {
 
 
 }
-

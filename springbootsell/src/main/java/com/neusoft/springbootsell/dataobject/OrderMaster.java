@@ -23,7 +23,7 @@ public class OrderMaster {
     private String orderId;
 
     /** 买家名字 */
-    private String userName;
+    private String buyerName;
 
     /** 买家手机号 */
     private String buyerPhone;
@@ -32,12 +32,13 @@ public class OrderMaster {
     private String buyerAddress;
 
     /** 买家微信 openId*/
-    private String  buyerOpenId;
+    private String  buyerOpenid;
 
     /** 订单总金额 */
     private BigDecimal orderAmount;
 
     /** 订单状态 默认为0 新下单*/
+
     private Integer orderStatus = OrderStatusEnum.NEW.getCode();
 
     /** 支付状态 默认为0 未支付*/
